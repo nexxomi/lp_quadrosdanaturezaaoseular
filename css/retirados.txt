@@ -1,0 +1,41 @@
+-- RETIRADO DA LINHA 40 DE STYLE.CSS
+
+@media (max-width: 500px) {
+    :root {
+        /* Tema Light como padrão */
+        --cor01: #F5F5F5;
+        --cor02: #323D26;
+        --cor03: #81B153;
+        --cor04: #FFFFFF;
+        /*switch*/
+        --trilho: #C5D8B1;
+        --slider: linear-gradient(135deg, #20AF56 0%, #323D26 100%);
+        --moon: #2D4A0F;
+        --sun: #C5D8B1;
+        /*detalhes*/
+        --home: #323D26;
+        --siga_insta: #FFFFFF46;
+
+    }
+
+    /* Tema Dark quando a classe .dark-theme estiver ativa */
+    .dark-theme {
+        --cor01: #272727;
+        /* Fundo escuro (substitui cor01) */
+        --cor02: #2D4A0F;
+        /* Verde bem escuro (substitui cor02) */
+        --cor03: #4C9302;
+        /* Verde vivo (substitui cor03) */
+        --cor04: #FFFFFF;
+        /* Texto claro (substitui cor04) */
+        /*switch*/
+        --trilho: #D0FAA4;
+        --slider: linear-gradient(135deg, #4C9302 0%, #323D26 100%);
+        --moon: #C5D8B1;
+        --sun: #2D4A0F;
+        --home: #2D4A0F;
+        --siga_insta: #FFFFFF46;
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
