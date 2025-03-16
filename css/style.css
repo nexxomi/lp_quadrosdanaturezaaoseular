@@ -196,7 +196,74 @@ header {
 }
 
 .navExterno:hover {
-    color: #333;
-    background-color: #fff;
+    color: var(--cor01);
+    background-color: var(--cor04);
     transform: translateY(-8px);
+}
+
+.last{
+    position: relative;
+    margin-top: 30vh;
+}
+
+.last .form{
+    position: relative;
+}
+
+.last .form h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: var(--cor04);
+    margin: 15px 9%;
+    font-size: 2em;
+}
+
+.last .form p{
+    font-family: 'Inter', sans-serif;
+    color: var(--cor04);
+}
+
+.last .form .form_data-caption{
+    color: #fff;
+    font-size: 1.25rem;
+    display: block;
+    margin: 25px auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 516px;
+    height: 50px;
+    background-color: var(--cor02);
+    border-radius: 8px;
+    border: none;
+}
+
+.last .form h2{
+    text-align: center;
+}
+
+.last .form p{
+    display: block;
+    margin: 20px auto 50px;
+    width: 80%;
+}
+
+.last .form .form_data-caption::placeholder{
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#btn_form_data-caption{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.last .blur{
+    width: 500px;
+    height: 442px;
+    background: radial-gradient(circle, #4C930232 50%, transparent 80%);
+    filter: blur(40px);
+    position: absolute;
+    z-index: -1;
+    top: -75%;
+    left: -15%;
 }
