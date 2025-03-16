@@ -55,6 +55,10 @@ body {
     font-weight: normal;
 }
 
+.hero{
+    margin-bottom: 20vh;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -127,7 +131,7 @@ header {
 .navInterno p {
     font-family: 'Inter', sans-serif;
     font-weight: bold;
-    color: #FFFFFF;
+    color: #FFFFFF !important;
 }
 
 .imagem>img {
@@ -162,4 +166,37 @@ header {
 .saibaMais .text p{
     font-family: 'Inter', sans-serif;
     color: var(--cor04);
+}
+
+.cards h2{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: var(--cor04);
+    margin: 15px 9%;
+    font-size: 2em;
+}
+
+.navExterno {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 178px;
+    height: 52px;
+    background-color: var(--cor03);
+    padding: 20px;
+    margin: 25px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+    border: none;
+}
+
+.navExterno:hover {
+    color: #333;
+    background-color: #fff;
+    transform: translateY(-8px);
 }

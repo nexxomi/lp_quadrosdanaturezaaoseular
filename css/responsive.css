@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media (max-width: 868px) {
+@media (max-width: 1024px) {
     .hero{
         background-image: url(../images/hero_img.png);
         background-repeat: no-repeat;
@@ -22,9 +22,23 @@
     .saibaMais_img1, .saibaMais_img2{
         display: none;
     }
+
+    .cards{
+        margin-bottom: 10vh;
+    }
 }
 
-@media (min-width: 869px) and (max-width: 1700px) {
+@media (max-width: 768px){
+    .slider-wrapper{
+        margin: 0 10px 40px;
+    }
+    
+    .slider-wrapper .swiper-slide-button{
+        display: none;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1700px) {
     .hero_container{
         justify-content: center;
         align-items: center;
@@ -48,13 +62,34 @@
     }
 
     .saibaMais_img1{
-        width: 410px;
-        height: 400px;
+        width: 310px;
+        height: 302px;
     }
     
     .saibaMais_img2{
-        width: 410px;
-        height: 475px;
+        width: 310px;
+        height: 359px;
+        position: absolute;
+        top: -80%;
+        left: 70%;
+        z-index: -1;
+    }
+}
+
+@media (min-width: 1300px){
+
+    .saibaMais .text{
+        width: 40%;
+    }
+
+    .saibaMais_img1{
+        width: 350px;
+        height: 341px;
+    }
+    
+    .saibaMais_img2{
+        width: 350px;
+        height: 405px;
         position: absolute;
         top: -80%;
         left: 70%;
