@@ -283,3 +283,57 @@ header {
     top: -75%;
     left: -15%;
 }
+
+footer{
+    color: var(--cor04);
+    font-family: 'Inter', sans-serif;
+    font-weight: bolder;
+    text-decoration: none;
+    margin-top: 30vh;
+    padding: 25px;
+}
+
+footer .container-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+footer ul{
+    list-style-type: none;
+}
+
+footer ul li{
+    margin-bottom: 15px;
+}
+
+footer ul li:hover{
+    color: var(--cor03);
+}
+
+footer a{
+    color: var(--cor04);
+}
+
+footer a:hover{
+    color: var(--cor03);
+}
+
+footer ul li a{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    column-gap: 10px;
+}
+
+footer .direitos-autorais{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20vh;
+}
+
+footer .direitos-autorais a{
+    margin-left: 35px;
+}
