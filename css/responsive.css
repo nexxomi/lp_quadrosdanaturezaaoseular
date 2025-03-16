@@ -5,6 +5,7 @@
         background-image: url(../images/hero_img.png);
         background-repeat: no-repeat;
         background-size: cover;
+        padding-bottom: 20vh;
     }
 
     .hero .imagem img{
@@ -40,6 +41,7 @@
     .slider-wrapper .swiper-slide-button{
         display: none;
     }
+
     .last .blur{
         width: 291px;
         height: 257px;
@@ -47,6 +49,10 @@
         filter: blur(90px);
         top: -75%;
         left: -15%;
+    }
+
+    .cards .blur{
+        display: none;
     }
 }
 
