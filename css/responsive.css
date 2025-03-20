@@ -17,6 +17,10 @@
         margin-bottom: 10vh;
     }
 
+    .last{
+        margin-top: 10vh;
+    }
+
     .last .last_imgs{
         display: none;
     }
@@ -24,6 +28,14 @@
     .saibaMais .text{
         max-width: 700px;
         margin: auto;
+    }
+
+    footer{
+        margin-top: 10vh;
+    }
+    
+    footer .container-links{
+        display: none;
     }
 }
 
@@ -50,9 +62,6 @@
         display: none;
     }
     
-    footer .container-links{
-        display: none;
-    }
     
     footer .direitos-autorais{
         flex-direction: column;
