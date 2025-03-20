@@ -14,9 +14,8 @@
     --moon: #2D4A0F;
     --sun: #C5D8B1;
     /*detalhes*/
-    --home: #323D26;
+    --home: #3E5936;
     --siga_insta: #adadad;
-
 }
 
 /* Tema Dark quando a classe .dark-theme estiver ativa */
@@ -34,8 +33,8 @@
     --slider: linear-gradient(135deg, #4C9302 0%, #323D26 100%);
     --moon: #C5D8B1;
     --sun: #2D4A0F;
-    --home: #2D4A0F;
-    --siga_insta: #FFFFFF46;
+    --home: #3E5936;
+    --siga_insta: #d0d0d0;
 }
 
 strong{
@@ -171,9 +170,10 @@ header {
 .cards h2{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
+    font-size: 2em;
+    text-align: center;
     color: var(--cor04);
     margin: 15px 9%;
-    font-size: 2em;
 }
 
 .cards{
@@ -212,8 +212,7 @@ header {
 }
 
 .navExterno:hover {
-    color: var(--cor01);
-    background-color: var(--cor04);
+    background-color: #76c126;
     transform: translateY(-8px);
 }
 

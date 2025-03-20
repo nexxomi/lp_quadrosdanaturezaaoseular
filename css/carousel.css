@@ -2,6 +2,7 @@
 
 .container-carousel{
     position: relative;
+    margin: auto;
     overflow: hidden;
 }
 
