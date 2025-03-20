@@ -34,6 +34,7 @@
 
 .card-list .card-item p{
     color: rgba(255, 255, 255, 0.70);
+    text-align: justify;
 }
 
 .slider-wrapper .swiper-pagination-bullet{

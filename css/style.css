@@ -173,7 +173,21 @@ header {
     font-size: 2em;
     text-align: center;
     color: var(--cor04);
-    margin: 15px 9%;
+    margin: 45px 9%;
+}
+
+.cards h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2rem;
+}
+
+.slider-wrapper_container-grid{
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr auto; /* Nome à esquerda, preço à direita */
+    align-items: center;
+    justify-content: space-between;
 }
 
 .cards{
