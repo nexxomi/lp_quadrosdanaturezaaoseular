@@ -30,7 +30,7 @@
 
 .card-list .card-item .card-image{
     border-radius: 16px;
-    max-width: 100%;
+    max-width: 80%;
 }
 
 .card-list .card-item p{

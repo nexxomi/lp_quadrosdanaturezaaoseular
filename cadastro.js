@@ -1,0 +1,47 @@
+document.querySelector('#btn_form_data-caption').addEventListener('click', async(e) => {
+    e.preventDefault(); // Previne o envio do formulário
+
+    // Obtém os valores dos campos
+    const nameInput = document.querySelector('#name').value;
+    const phoneInput = document.querySelector('#phone').value;
+
+    // Validação do nome
+    const namePattern = /^[\p{L}\s]+$/u; // Apenas letras e espaços
+    if (nameInput.length < 3) {
+        alert("O nome deve ter mais de 2 caracteres.");
+        return; // Encerra a execução se a validação do nome falhar
+    }
+    if (!namePattern.test(nameInput)) {
+        alert("O nome não pode conter números.");
+        return; // Encerra a execução se o nome contiver números
+    }
+
+    // Validação do número de telefone
+    let phone = phoneInput.replace(/\D/g, ''); // Remove tudo que não for número
+    const phonePattern = /^[0-9]{2}9[0-9]{8}$/; // Expressão regular para o formato DDdnnnnnnnn
+    
+    if (!phonePattern.test(phone)) {
+        alert("O número inserido está incorreto!\n Deve ser inserido apenas o DDD, o dígito 9 e o número sem traços.");
+        return; // Encerra a execução se o número de telefone for inválido
+    } else {
+        phone = `55${phone}`; // Adiciona o código do país
+        alert(`Número de telefone: ${phone}`);
+        try {
+            const response = await fetch('http://127.0.0.1:5000/send-message', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ phone: phone, name: nameInput })
+            });
+    
+            const result = await response.json();
+            alert("Aguarde alguns minutos e confira seu WhatsApp!")
+        } catch (error) {
+            alert(error)
+            console.error(error);
+        }
+    }
+
+    // Se todas as validações passarem, você pode enviar os dados ou realizar outra ação
+});
