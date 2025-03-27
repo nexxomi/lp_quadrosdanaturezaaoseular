@@ -148,6 +148,11 @@ header {
     right: 0;
 }
 
+.cards_h2_sup{
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
 .saibaMais{
     margin-top: 10vh;
     display: flex;
@@ -178,7 +183,7 @@ header {
 
 .cards h3{
     font-family: 'Raleway', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .slider-wrapper_container-grid{
