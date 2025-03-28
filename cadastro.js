@@ -27,7 +27,7 @@ document.querySelector('#btn_form_data-caption').addEventListener('click', async
         phone = `55${phone}`; // Adiciona o código do país
         alert(`Número de telefone: ${phone}`);
         try {
-            const response = await fetch('http://127.0.0.1:5000/send-message', {
+            const response = await fetch('https://lp-quadrosdanaturezaaoseular-back.onrender.com/send-message', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
