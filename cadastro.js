@@ -15,6 +15,7 @@ document.querySelectorAll(".btnComprar").forEach(botao => {
 document.querySelector('#btn_form_data-caption').addEventListener('click', async(e) => {
     e.preventDefault(); // Previne o envio do formulário
 
+
     // Obtém os valores dos campos
     const nameInput = document.querySelector('#name').value;
     const phoneInput = document.querySelector('#phone').value;
@@ -39,13 +40,7 @@ document.querySelector('#btn_form_data-caption').addEventListener('click', async
         return; // Encerra a execução se o número de telefone for inválido
     } else {
         phone = `55${phone}`; // Adiciona o código do país
-        
-        const dados = {
-            phone: phone,
-            name: nameInput,
-            productImage: produtoSelecionado
-        }
-
+        alert(produtoSelecionado)
         try {
             const response = await fetch('https://lp-quadrosdanaturezaaoseular-back.onrender.com/send-message', {
                 method: 'POST',
