@@ -1,3 +1,17 @@
+var produtoSelecionado = null
+
+document.querySelectorAll(".btnComprar").forEach(botao => {
+    botao.addEventListener("click", e => {
+        const cardItem = e.target.closest(".card-item")
+        if(cardItem){
+            const imagem = cardItem.querySelector(".card-image")
+            produtoSelecionado = imagem ? imagem.src : null
+        }else{
+            produtoSelecionado = null
+        }
+    })
+})
+
 document.querySelector('#btn_form_data-caption').addEventListener('click', async(e) => {
     e.preventDefault(); // Previne o envio do formulário
 
@@ -25,14 +39,20 @@ document.querySelector('#btn_form_data-caption').addEventListener('click', async
         return; // Encerra a execução se o número de telefone for inválido
     } else {
         phone = `55${phone}`; // Adiciona o código do país
-        alert(`Número de telefone: ${phone}`);
+        
+        const dados = {
+            phone: phone,
+            name: nameInput,
+            productImage: produtoSelecionado
+        }
+
         try {
             const response = await fetch('https://lp-quadrosdanaturezaaoseular-back.onrender.com/send-message', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ phone: phone, name: nameInput })
+                body: JSON.stringify({ dados })
             });
     
             const result = await response.json();
