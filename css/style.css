@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    /* Tema Light como padrão */
+    /* Tema Dark como padrão */
     --cor01: #F5F5F5;
     --cor02: #323D26;
     --cor03: #81B153;
