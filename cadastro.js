@@ -52,7 +52,11 @@ document.querySelector('#btn_form_data-caption').addEventListener('click', async
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ dados })
+                body: JSON.stringify({
+                    phone: phone,
+                    name: nameInput,
+                    productImage: produtoSelecionado
+                })
             });
     
             const result = await response.json();
