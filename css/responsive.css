@@ -31,7 +31,7 @@
     }
 
     footer{
-        margin-top: 10vh;
+        margin-top: 0vh;
     }
     
     footer .container-links{
@@ -158,6 +158,10 @@
 
     .last .form p{
         font-size: 1.3rem;
+    }
+
+    .video video{
+        width: 800px;
     }
 }
 

@@ -238,6 +238,7 @@ header {
 .last{
     position: relative;
     margin-top: 30vh;
+    margin-bottom: 30vh;
 }
 
 .last .form{
@@ -307,7 +308,7 @@ footer{
     font-family: 'Inter', sans-serif;
     font-weight: bolder;
     text-decoration: none;
-    margin-top: 30vh;
+    margin-top: 10vh;
     padding: 25px;
 }
 
@@ -354,4 +355,11 @@ footer .direitos-autorais{
 
 footer .direitos-autorais a{
     margin-left: 35px;
+}
+
+.video{
+    background-color: var(--cor02);
+    padding: 8% 25px;
+    display: flex;
+    justify-content: center;
 }
