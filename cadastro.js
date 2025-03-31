@@ -48,17 +48,21 @@ document.querySelector('#btn_form_data-caption').addEventListener('click', async
 
     // Enviar dados para o Google Sheets
     try {
-        const sheetsResponse = await fetch('https://script.google.com/macros/s/AKfycbx2Mmq3T6No_VLGAOqpPl_6hSFqkYNgC3vJggxs0_-iSakfuUKWahxz1pSwZxQQLvZS/exec', {
+        const registerResponse = await fetch('https://lp-quadrosdanaturezaaoseular-back.onrender.com/register-lead', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify(data)
+            body: JSON.stringify({
+                phone: phone,
+                name: nameInput,
+                productImage: produtoSelecionado
+            })
         });
 
-        const sheetsResult = await sheetsResponse.json();
-        if (sheetsResult.status !== 'success') {
-            throw new Error('Erro ao enviar dados para o Google Sheets');
+        const registerResult = await registerResponse.json();
+        if (registerResult.status !== 'success') {
+            throw new Error(registerResult.error || 'Erro ao registrar o lead');
         }
     } catch (error) {
         console.error(error);
