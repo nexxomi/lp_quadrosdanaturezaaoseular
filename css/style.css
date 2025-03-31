@@ -359,7 +359,15 @@ footer .direitos-autorais a{
 
 .video{
     background-color: var(--cor02);
-    padding: 8% 25px;
+    padding: 35px 25px;
     display: flex;
     justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.video video{
+    border-radius: 15px;
+    cursor: pointer;
 }

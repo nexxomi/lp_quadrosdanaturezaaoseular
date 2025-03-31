@@ -37,6 +37,10 @@
     footer .container-links{
         display: none;
     }
+
+    .video{
+        border-radius: 0px;
+    }
 }
 
 @media (max-width: 768px){
